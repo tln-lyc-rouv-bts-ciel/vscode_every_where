@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Installation - VSCode everywhere</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="..">VSCode everywhere</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Objectif</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Installation</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">msys2</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../C%2B%2B/" class="dropdown-item">C/C++</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">Git</a>
+</li>
+                                    
+<li>
+    <a href="../nodejs/" class="dropdown-item">NodeJs</a>
+</li>
+                                    
+<li>
+    <a href="../hacking/" class="dropdown-item">Hacking</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">WebDev</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../webdev/" class="dropdown-item">Extensions</a>
+</li>
+                                    
+<li>
+    <a href="../nodered/" class="dropdown-item">NodeRed</a>
+</li>
+                                    
+<li>
+    <a href="../php/" class="dropdown-item">PHP</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../python/" class="nav-link">Python</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">RemoteDev</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ssh_rpi/" class="dropdown-item">Ssh rpi</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../C%2B%2B/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#vscode" class="nav-link">VSCode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#msys2" class="nav-link">Msys2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#integration-de-msys2-a-vscode" class="nav-link">Intégration de Msys2 à VSCode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#mkdocs" class="nav-link">Mkdocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="vscode">VSCode</h2>
+<ul>
+<li>Téléchargement d'une version portable : <a href="https://github.com/AndhikaWB/VSCodePortable/tree/master?tab=readme-ov-file" target="_blank">VSCode</a></li>
+<li>Création du dossier <strong>downloads</strong> pour conservatoin des fichiers téléchargés :</li>
+</ul>
+<pre><code class="language-txt">VSCodeEveryWhere
+│   ├── App
+│   ├── Data
+│   ├── desktop.ini
+│   ├── downloads
+│   ├── Help.html
+│   ├── Other
+│   ├── VSCodePortable - original.ini
+│   ├── VSCodePortable.exe
+│   └── VSCodePortable.ini
+</code></pre>
+<ul>
+<li>Dans VSCode : </li>
+</ul>
+<p><code>ctrl + shift + P</code> -&gt; <code>Preferences: Open User Settings (JSON)</code></p>
+<pre><code class="language-txt">Valeurs initiales du fichier :
+</code></pre>
+<pre><code class="language-json">{
+    &quot;update.mode&quot;: &quot;none&quot;,
+    &quot;telemetry.telemetryLevel&quot;: &quot;off&quot;,
+    &quot;extensions.autoUpdate&quot;: false,
+    &quot;extensions.ignoreRecommendations&quot;: true,
+    &quot;workbench.enableExperiments&quot;: false,
+    &quot;workbench.settings.enableNaturalLanguageSearch&quot;: false,
+    &quot;editor.bracketPairColorization.enabled&quot;: true,
+    &quot;editor.minimap.renderCharacters&quot;: false,
+    &quot;workbench.colorTheme&quot;: &quot;Monokai&quot;
+}
+</code></pre>
+<h2 id="msys2">Msys2</h2>
+<ul>
+<li>Téléchargement : <a href="https://github.com/msys2/msys2-installer/releases" target="_blank">msys2</a></li>
+<li>Copie du dossier <strong>msys64</strong> après décompression du fichier d'archive dans le répertoire <strong>App</strong> de <strong>VSCodeEveryWhere</strong>.</li>
+<li>Installation et mise à jour : <a href="https://www.msys2.org/docs/installer/" target="_blank">msys2</a></li>
+<li>Paquets initialement installés :</li>
+</ul>
+<pre><code class="language-console">$ pacman -Qee
+base 2022.06-1
+filesystem 2023.02.07-2
+&lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+msys2-runtime 3.5.4-2
+</code></pre>
+<ul>
+<li>Choix de l'environnement <em>ucrt64</em> : <a href="https://www.msys2.org/docs/environments/" target="_blank">msys2</a></li>
+<li>Installation des paquets pour générer cette documentation (<strong>python</strong>, <strong>pip</strong> et <strong>mkdocs</strong>), dans la console <em>ucrt64</em> :</li>
+</ul>
+<pre><code class="language-txt">gcc : 505,57 MiB
+python : 345,15 MiB
+tree : pour générer les arborescence des dossiers et fichiers
+</code></pre>
+<pre><code class="language-console">$ pacman -S mingw-w64-ucrt-x86_64-gcc
+$ pacman -S mingw-w64-ucrt-x86_64-python-pip
+$ pacman -S tree
+$ pacman -Qee
+...
+mingw-w64-ucrt-x86_64-gcc 14.2.0-1
+mingw-w64-ucrt-x86_64-python-pip 24.1.2-2
+tree 2.1.3-1
+...
+$ pip install mkdocs
+</code></pre>
+<h2 id="integration-de-msys2-a-vscode">Intégration de Msys2 à VSCode</h2>
+<ul>
+<li>Modification du fichier <strong>VSCodePortable.ini</strong> pour actualiser le chemin <strong>python</strong> et <strong>mkdocs</strong> :</li>
+</ul>
+<pre><code class="language-ini">MINGW=%PAL:AppDir%\msys64\ucrt64
+</code></pre>
+<ul>
+<li>Vérifier dans le <em>terminal</em> de VSCode que les commandes <strong>python</strong> et <strong>mkdocs</strong> fonctionnent :</li>
+</ul>
+<pre><code class="language-console">$ python --version
+$ mkdocs --version
+</code></pre>
+<ul>
+<li>Intégration du terminal <em>Mintty</em> de msys2 dans VSCode :</li>
+</ul>
+<p><code>ctrl + shift + P</code> -&gt; <code>User settings (JSON)</code></p>
+<pre><code class="language-txt">Ajouter dans le fichier settings.json les lignes suivantes :
+</code></pre>
+<pre><code class="language-json">{
+    &quot;terminal.integrated.profiles.windows&quot;: {
+            &quot;MSYS2 UCRT&quot;: {
+                &quot;path&quot;: &quot;cmd.exe&quot;,
+                &quot;args&quot;: [
+                    &quot;/c&quot;,
+                    &quot;D:\\PortableApps\\VSCodeEveryWhere\\App\\msys64\\msys2_shell.cmd -defterm -here -no-start -ucrt64&quot;
+                ]
+            }
+        }
+}
+</code></pre>
+<pre><code class="language-txt">Le terminal Mintty est ajouté à la liste des différents terminaux.
+</code></pre>
+<h2 id="mkdocs">Mkdocs</h2>
+<ul>
+<li>Documentation : <a href="https://www.mkdocs.org/getting-started/" target="_blank">mkdocs</a></li>
+<li>Installation de l'<em>extension</em> <em>Live Server by Ritwick Dey</em> pour visualiser le rendu final de la documentation au format html.</li>
+<li>Navigateur par défaut pour <em>Live Server</em> :
+<code>ctrl + shift + P</code> -&gt; <code>User settings (JSON)</code></li>
+</ul>
+<pre><code class="language-txt">Ajouter dans le fichier settings.json les lignes suivantes :
+</code></pre>
+<pre><code class="language-json">{
+    &quot;liveServer.settings.AdvanceCustomBrowserCmdLine&quot;: &quot;D:\\PortableApps\\GoogleChromePortable64\\GoogleChromePortable.exe&quot;
+}
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

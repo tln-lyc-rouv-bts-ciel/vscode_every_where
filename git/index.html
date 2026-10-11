@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Git - VSCode everywhere</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" >
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="..">VSCode everywhere</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Objectif</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../installation/" class="nav-link">Installation</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">msys2</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../C%2B%2B/" class="dropdown-item">C/C++</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Git</a>
+</li>
+                                    
+<li>
+    <a href="../nodejs/" class="dropdown-item">NodeJs</a>
+</li>
+                                    
+<li>
+    <a href="../hacking/" class="dropdown-item">Hacking</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">WebDev</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../webdev/" class="dropdown-item">Extensions</a>
+</li>
+                                    
+<li>
+    <a href="../nodered/" class="dropdown-item">NodeRed</a>
+</li>
+                                    
+<li>
+    <a href="../php/" class="dropdown-item">PHP</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../python/" class="nav-link">Python</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">RemoteDev</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ssh_rpi/" class="dropdown-item">Ssh rpi</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../C%2B%2B/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../nodejs/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#installation-de-la-version-portable-pour-windows" class="nav-link">Installation de la version portable pour Windows</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#integration-de-git-a-vscode" class="nav-link">Intégration de Git à VSCode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#integration-du-terminal-mintty-de-git-portable-dans-vscode" class="nav-link">Intégration du terminal Mintty de git portable dans VSCode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#authentification" class="nav-link">Authentification</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><img alt="git logo" src="../img/git_logo_small.png" /></p>
+<h2 id="installation-de-la-version-portable-pour-windows">Installation de la version portable pour Windows</h2>
+<ul>
+<li>Lien : <a href="https://git-scm.com/" target="_blank">git</a> </li>
+<li>Copie de la version portable dans le répertoire <strong>App</strong> de VSCodeEveryWhere :</li>
+</ul>
+<pre><code class="language-txt">├── App
+│   ├── AppInfo
+│   ├── FirstRun
+│   ├── msys64
+│   ├── PortableGit
+│   └── VSCode
+</code></pre>
+<h2 id="integration-de-git-a-vscode">Intégration de Git à VSCode</h2>
+<ul>
+<li>Modification du fichier <strong>VSCodePortable.ini</strong> pour actualiser le chemin <strong>git</strong> :</li>
+</ul>
+<pre><code class="language-ini">GIT=%PAL:AppDir%\PortableGit
+</code></pre>
+<ul>
+<li>Redémarrage de VSCodeEveryWhere : la commande <strong>git</strong> est disponible dans le terminal <em>pwsh</em> ou <em>cmd</em>.</li>
+</ul>
+<h2 id="integration-du-terminal-mintty-de-git-portable-dans-vscode">Intégration du terminal <em>Mintty</em> de git portable dans VSCode</h2>
+<p><code>ctrl + shift + P</code> -&gt; <code>User settings (JSON)</code></p>
+<pre><code class="language-txt">Ajouter dans le fichier settings.json les lignes suivantes :
+</code></pre>
+<pre><code class="language-json">{
+    &quot;terminal.integrated.profiles.windows&quot;: {
+            &quot;GIT PORTABLE&quot;: {
+            &quot;path&quot;: &quot;cmd.exe&quot;,
+            &quot;args&quot;: [
+                &quot;/c&quot;,
+                &quot;D:\\PortableApps\\VSCodeEveryWhere\\App\\PortableGit\\git-bash.exe&quot;
+
+            ]    
+        }        
+    }
+}
+</code></pre>
+<pre><code class="language-txt">Le terminal git s'ouvre dans une nouvelle fenêtre.
+En ligne de commande :
+- on vérifie le chemin du répertoire home dans la console git ;
+- on configure le nom et le mail ;
+- le fichier .gitconfig est créé dans le répertoire home
+</code></pre>
+<pre><code class="language-sh">
+$ echo $HOME
+/d/PortableApps/VSCodeEveryWhere/Data/misc/Git/home
+$ git config --global user.name &quot;user_name&quot;
+$ git config --global user.email &quot;user_email&quot;
+$ git config --list --global
+$ cd ~
+$ ls -la
+total 10
+drwxr-xr-x 1 ardui 197609   0 Oct  9 22:39 ./
+drwxr-xr-x 1 ardui 197609   0 Oct  9 20:47 ../
+-rw-r--r-- 1 ardui 197609 164 Oct  9 22:35 .bash_history
+-rw-r--r-- 1 ardui 197609  99 Oct  9 21:20 .bash_profile
+-rw-r--r-- 1 ardui 197609 137 Oct 22  2023 .bashrc
+-rw-r--r-- 1 ardui 197609  56 Oct  9 22:37 .gitconfig
+-rw-r--r-- 1 ardui 197609  20 Oct  9 22:39 .lesshst
+-rw-r--r-- 1 ardui 197609 137 Oct 22  2023 .zshrc
+</code></pre>
+<h2 id="authentification">Authentification</h2>
+<pre><code class="language-sh"># configuration par défaut (&lt;no helper&gt; coché et fenêtre du gestionnaire à chaque connexion)
+$ git config --list --global
+...
+credential.helperselector.selected=&lt;no helper&gt;
+...
+$ git config --list --system
+...
+credential.helper=helper-selector
+...
+</code></pre>
+<pre><code class="language-sh"># exemple pour se connecter au dépôt distant lm35 :
+$ git remote add https://github.com/tln-lyc-rouv-bts-ciel/digital_thermometer_lm35
+</code></pre>
+<blockquote>
+<p>Le gestionnaire d'authentification git apparaît :
+<img alt="git logo" src="../img/helper-selector.png" /></p>
+<p>Après avoir cliqué sur "select" dans le gestionnaire :
+<img alt="github login Firefox #1" src="../img/login-github.png" /></p>
+</blockquote>
+<p><img alt="github login Firefox #2" src="../img/login-popup.png" /></p>
+<blockquote>
+<p>Après avoir recliqué sur "select" dans le gestionnaire, vscode mémorise l'accès au compte github :
+<img alt="vscode account" src="../img/vscode-acccounts.png" /></p>
+</blockquote>
+<pre><code class="language-txt">Trois types d'identification (voir le &quot;Gestionnaire d'identification&quot; Windows 11 pour les clés créées):
+- &lt;no helper&gt; ne crée pas de clé
+- wincred crée une clé (git:https://109131905@github.com)
+- manager crée une clé (git:https://github.com)
+VSCode se connectera alors automatiquement au compte github associé.
+</code></pre>
+<pre><code class="language-sh"># pour voir l'identifiant éventuellement créé (si clé wincred ou manager)
+$ git credential-manager github list
+# pour retirer une valeur mutliple dans la configuration de git
+$ git config --unset-all &lt;value&gt;
+</code></pre>
+<pre><code class="language-sh"># Pour ne plus avoir la fenêtre du gestionnaire d'identification de git cocher la case &quot;Always use this from now on&quot; dans le gestioonnaire et sélectionner une option.
+$ git config --list --global
+...
+# si &lt;no helper&gt; sélectionné :
+credential.helperselector.selected=&lt;no helper&gt;
+# si wincred sélectionné
+credential.helperselector.selected=wincred
+...
+$ git config --list --system
+...
+# si &lt;no helper&gt; sélectionné :
+credential.helper=
+# si wincred sélectionné
+credential.helper=!&quot;D:/PortableApps/VSCodeEveryWhere/App/PortableGit/mingw64/libexec/git-core/git-credential-wincred.exe&quot;
+...
+# si déconnexion du compte github dans vscode, pour faire réapparaître le gestionnaire :
+$ git config --system credential.helper helper-selector
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
