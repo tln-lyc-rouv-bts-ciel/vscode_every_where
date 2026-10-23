@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+        <title>Git - VSCode everywhere</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">VSCode everywhere</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Objectif
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../installation/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Installation
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover"
+                    data-bs-toggle="collapse" data-bs-target="#msys2-collapse" aria-expanded="true">
+                    msys2
+                </a>
+                <div class="collapse show" id="msys2-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../C%2B%2B/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            C/C++
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Git
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nodejs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NodeJs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../hacking/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Hacking
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#webdev-collapse" aria-expanded="false">
+                    WebDev
+                </a>
+                <div class="collapse" id="webdev-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../webdev/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Extensions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../nodered/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NodeRed
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../php/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            PHP
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../python/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Python
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#remotedev-collapse" aria-expanded="false">
+                    RemoteDev
+                </a>
+                <div class="collapse" id="remotedev-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../ssh_rpi/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ssh rpi
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../C%2B%2B/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../nodejs/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><p><img alt="git logo" src="../img/git_logo_small.png" /></p>
+<h2 id="installation-de-la-version-portable-pour-windows">Installation de la version portable pour Windows</h2>
+<ul>
+<li>Lien : <a href="https://git-scm.com/" target="_blank">git</a> </li>
+<li>Copie de la version portable dans le répertoire <strong>App</strong> de VSCodeEveryWhere :</li>
+</ul>
+<pre><code class="language-txt">├── App
+│   ├── AppInfo
+│   ├── FirstRun
+│   ├── msys64
+│   ├── PortableGit
+│   └── VSCode
+</code></pre>
+<h2 id="integration-de-git-a-vscode">Intégration de Git à VSCode</h2>
+<ul>
+<li>Modification du fichier <strong>VSCodePortable.ini</strong> pour actualiser le chemin <strong>git</strong> :</li>
+</ul>
+<pre><code class="language-ini">GIT=%PAL:AppDir%\PortableGit
+</code></pre>
+<ul>
+<li>Redémarrage de VSCodeEveryWhere : la commande <strong>git</strong> est disponible dans le terminal <em>pwsh</em> ou <em>cmd</em>.</li>
+</ul>
+<h2 id="integration-du-terminal-mintty-de-git-portable-dans-vscode">Intégration du terminal <em>Mintty</em> de git portable dans VSCode</h2>
+<p><code>ctrl + shift + P</code> -&gt; <code>User settings (JSON)</code></p>
+<pre><code class="language-txt">Ajouter dans le fichier settings.json les lignes suivantes :
+</code></pre>
+<pre><code class="language-json">{
+    &quot;terminal.integrated.profiles.windows&quot;: {
+            &quot;GIT PORTABLE&quot;: {
+            &quot;path&quot;: &quot;cmd.exe&quot;,
+            &quot;args&quot;: [
+                &quot;/c&quot;,
+                &quot;D:\\PortableApps\\VSCodeEveryWhere\\App\\PortableGit\\git-bash.exe&quot;
+
+            ]    
+        }        
+    }
+}
+</code></pre>
+<pre><code class="language-txt">Le terminal git s'ouvre dans une nouvelle fenêtre.
+En ligne de commande :
+- on vérifie le chemin du répertoire home dans la console git ;
+- on configure le nom et le mail ;
+- le fichier .gitconfig est créé dans le répertoire home
+</code></pre>
+<pre><code class="language-sh">
+$ echo $HOME
+/d/PortableApps/VSCodeEveryWhere/Data/misc/Git/home
+$ git config --global user.name &quot;user_name&quot;
+$ git config --global user.email &quot;user_email&quot;
+$ git config --list --global
+$ cd ~
+$ ls -la
+total 10
+drwxr-xr-x 1 ardui 197609   0 Oct  9 22:39 ./
+drwxr-xr-x 1 ardui 197609   0 Oct  9 20:47 ../
+-rw-r--r-- 1 ardui 197609 164 Oct  9 22:35 .bash_history
+-rw-r--r-- 1 ardui 197609  99 Oct  9 21:20 .bash_profile
+-rw-r--r-- 1 ardui 197609 137 Oct 22  2023 .bashrc
+-rw-r--r-- 1 ardui 197609  56 Oct  9 22:37 .gitconfig
+-rw-r--r-- 1 ardui 197609  20 Oct  9 22:39 .lesshst
+-rw-r--r-- 1 ardui 197609 137 Oct 22  2023 .zshrc
+</code></pre>
+<h2 id="authentification">Authentification</h2>
+<pre><code class="language-sh"># configuration par défaut (&lt;no helper&gt; coché et fenêtre du gestionnaire à chaque connexion)
+$ git config --list --global
+...
+credential.helperselector.selected=&lt;no helper&gt;
+...
+$ git config --list --system
+...
+credential.helper=helper-selector
+...
+</code></pre>
+<pre><code class="language-sh"># exemple pour se connecter au dépôt distant lm35 :
+$ git remote add https://github.com/tln-lyc-rouv-bts-ciel/digital_thermometer_lm35
+</code></pre>
+<blockquote>
+<p>Le gestionnaire d'authentification git apparaît :
+<img alt="git logo" src="../img/helper-selector.png" /></p>
+<p>Après avoir cliqué sur "select" dans le gestionnaire :
+<img alt="github login Firefox #1" src="../img/login-github.png" /></p>
+</blockquote>
+<p><img alt="github login Firefox #2" src="../img/login-popup.png" /></p>
+<blockquote>
+<p>Après avoir recliqué sur "select" dans le gestionnaire, vscode mémorise l'accès au compte github :
+<img alt="vscode account" src="../img/vscode-acccounts.png" /></p>
+</blockquote>
+<pre><code class="language-txt">Trois types d'identification (voir le &quot;Gestionnaire d'identification&quot; Windows 11 pour les clés créées):
+- &lt;no helper&gt; ne crée pas de clé
+- wincred crée une clé (git:https://109131905@github.com)
+- manager crée une clé (git:https://github.com)
+VSCode se connectera alors automatiquement au compte github associé.
+</code></pre>
+<pre><code class="language-sh"># pour voir l'identifiant éventuellement créé (si clé wincred ou manager)
+$ git credential-manager github list
+# pour retirer une valeur mutliple dans la configuration de git
+$ git config --unset-all &lt;value&gt;
+</code></pre>
+<pre><code class="language-sh"># Pour ne plus avoir la fenêtre du gestionnaire d'identification de git cocher la case &quot;Always use this from now on&quot; dans le gestioonnaire et sélectionner une option.
+$ git config --list --global
+...
+# si &lt;no helper&gt; sélectionné :
+credential.helperselector.selected=&lt;no helper&gt;
+# si wincred sélectionné
+credential.helperselector.selected=wincred
+...
+$ git config --list --system
+...
+# si &lt;no helper&gt; sélectionné :
+credential.helper=
+# si wincred sélectionné
+credential.helper=!&quot;D:/PortableApps/VSCodeEveryWhere/App/PortableGit/mingw64/libexec/git-core/git-credential-wincred.exe&quot;
+...
+# si déconnexion du compte github dans vscode, pour faire réapparaître le gestionnaire :
+$ git config --system credential.helper helper-selector
+</code></pre></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                
+                    <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+                
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/mkdocs.js"></script>
+			<script src="../search/main.js" defer></script>
+
+</body>
+
+</html>
